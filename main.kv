@@ -1,0 +1,315 @@
+<MDLabel>
+	font_size: 18
+    
+
+<MainWindow>	
+
+	BoxLayout:
+		orientation: 'vertical'
+		size: root.width, root.height	
+
+		ScrollView:		
+			size_hint_y: 0.93
+			pos_hint: {'x': 0, "y": 0}
+			do_scroll_x: False			
+			do_scroll_y: True			
+				
+			GridLayout:			
+				size: (root.width, root.height)
+				size_hint_x: None
+				size_hint_y: None
+				cols: 4
+				rows: 24
+				height: self.minimum_height
+								
+		        	
+				# Row
+				MDLabel:
+					text: "Jaja"
+					size_hint: (.3, None)				
+					halign: "center"
+
+				MDLabel:							
+					text: str(int(sl_jaja.value))
+					size_hint: (.1, None)				
+					halign: "center"
+
+				MDLabel:
+					text: "kom"
+					size_hint: (.15, None)				
+					halign: "center"
+
+				MDSlider:
+					id: sl_jaja				
+					min: 0
+					max: 150
+					value: root.sve[0][0]
+					step: 10
+					size_hint: (.45, None)
+					#on_value: root.slide_it(*args)
+
+		        # Row
+		        MDLabel:
+		            text: "Šećer"
+		            size_hint: (.3, None)				
+					halign: "center"			
+
+				MDLabel:
+		            text: str(int(sl_secer.value))
+		            size_hint: (.1, None)				
+					halign: "center"
+
+				MDLabel:
+					text: "kg"
+					size_hint: (.15, None)				
+					halign: "center"
+
+				MDSlider:
+					id: sl_secer
+		            min: 0
+		            max: 10
+		            value: root.sve[0][1]
+		            step: 1
+		            size_hint: (.45, None)
+
+		         # Row
+		        MDLabel:
+		            text: "Šećer u pr."
+		            size_hint: (.3, None)				
+					halign: "center"			
+
+				MDLabel:
+		            text: str(int(sl_secerupr.value))
+		            size_hint: (.1, None)				
+					halign: "center"
+
+				MDLabel:
+					text: "500g"
+					size_hint: (.15, None)				
+					halign: "center"
+
+				MDSlider:
+					id: sl_secerupr
+		            min: 0
+		            max: 10
+		            value: root.sve[0][2]
+		            step: 1
+		            size_hint: (.45, None)
+
+		        # Row
+		        MDLabel:
+		            text: "Brašno"
+		            size_hint: (.3, None)				
+					halign: "center"
+
+				MDLabel:
+		            text: str(int(sl_brasno.value))
+		            size_hint: (.1, None)				
+					halign: "center"
+
+				MDLabel:
+					text: "kg"
+					size_hint: (.15, None)				
+					halign: "center"
+
+				MDSlider:
+					id: sl_brasno
+		            min: 0
+		            max: 10
+		            value: 2
+		            step: 1
+		            size_hint: (.45, None)
+
+		        # Row
+		        MDLabel:
+		            text: "Mleko"
+		            size_hint: (.3, None)				
+					halign: "center"			
+
+				MDLabel:
+		            text: str(int(sl_mleko.value))
+		            size_hint: (.1, None)				
+					halign: "center"
+
+				MDLabel:
+					text: "1.5l"
+					size_hint: (.15, None)				
+					halign: "center"
+
+				MDSlider:
+					id: sl_mleko
+		            min: 0
+		            max: 20
+		            value: 10
+		            step: 1
+		            size_hint: (.45, None)
+
+		        # Row
+		        MDLabel:	        	
+		            text: "Margarin"
+		            size_hint: (.3, None)				
+					halign: "center"
+
+				MDLabel:
+		            text: str(int(sl_margarin.value))
+		            size_hint: (.1, None)				
+					halign: "center"
+
+				MDLabel:
+					text: "kom"
+					size_hint: (.15, None)				
+					halign: "center"
+
+				MDSlider:
+					id: sl_margarin
+		            min: 0
+		            max: 30
+		            value: 5
+		            step: 1
+		            size_hint: (.45, None)
+
+		        # Row
+		        MDLabel:
+		            text: "Plazma"
+		            size_hint: (.3, None)				
+					halign: "center"			
+
+				MDLabel:
+		            text: str(int(sl_plazma.value))
+		            size_hint: (.1, None)				
+					halign: "center"
+
+				MDLabel:
+					text: "300g"
+					size_hint: (.15, None)				
+					halign: "center"
+
+				MDSlider:
+					id: sl_plazma
+		            min: 0
+		            max: 10
+		            value: 5
+		            step: 1
+		            size_hint: (.45, None)
+
+		         # Row
+		        MDLabel:
+		            text: "Plazma 2kg"
+		            size_hint: (.3, None)				
+					halign: "center"			
+
+				MDLabel:
+		            text: str(int(sl_plazma2kg.value))
+		            size_hint: (.1, None)				
+					halign: "center"
+
+				MDLabel:
+					text: "2kg"
+					size_hint: (.15, None)				
+					halign: "center"
+
+				MDSlider:
+					id: sl_plazma2kg
+		            min: 0
+		            max: 5
+		            value: 0
+		            step: 1
+		            size_hint: (.45, None)
+
+		        # Row
+		        MDLabel:
+		            text: "Čokolada"
+		            size_hint: (.3, None)				
+					halign: "center"
+
+				MDLabel:
+		            text: str(int(sl_cokolada.value))
+		            size_hint: (.1, None)				
+					halign: "center"
+
+				MDLabel:
+					text: "kom"
+					size_hint: (.15, None)				
+					halign: "center"
+
+				MDSlider:
+					id: sl_cokolada
+		            min: 0
+		            max: 10
+		            value: 5
+		            step: 1
+		            size_hint: (.45, None)
+
+		        # Row
+		        MDLabel:
+		            text: "Šlag"
+		            size_hint: (.3, None)				
+					halign: "center"			
+
+				MDLabel:
+		            text: str(int(sl_slag.value))
+		            size_hint: (.1, None)				
+					halign: "center"
+
+				MDLabel:
+					text: "500g"
+					size_hint: (.15, None)				
+					halign: "center"
+
+				MDSlider:
+					id: sl_slag
+		            min: 0
+		            max: 10
+		            value: 5
+		            step: 1
+		            size_hint: (.45, None)
+
+		        # Row
+		        MDLabel:
+		            text: "Nutella"
+		            size_hint: (.3, None)				
+					halign: "center"			
+
+				MDLabel:
+		            text: str(int(sl_nutella.value))
+		            size_hint: (.1, None)				
+					halign: "center"
+
+				MDLabel:
+					text: "kom"
+					size_hint: (.15, None)				
+					halign: "center"
+
+				MDSlider:
+					id: sl_nutella
+		            min: 0
+		            max: 10
+		            value: 5
+		            step: 1
+		            size_hint: (.45, None)
+
+		         # Row
+		        MDLabel:
+		            text: "Pavlaka"
+		            size_hint: (.3, None)				
+					halign: "center"			
+
+				MDLabel:
+		            text: str(int(sl_pavlaka.value))
+		            size_hint: (.1, None)				
+					halign: "center"
+
+				MDLabel:
+					text: "kant."
+					size_hint: (.15, None)				
+					halign: "center"
+
+				MDSlider:
+					id: sl_pavlaka
+		            min: 0
+		            max: 10
+		            value: 5
+		            step: 1
+		            size_hint: (.45, None)
+
+		       
